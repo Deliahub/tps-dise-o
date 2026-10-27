@@ -1,0 +1,306 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ENCABEZADO Y NAVEGACIÓN
+========================= */
+
+header {
+    background-color: #6d0ea9;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #6ec6ff;
+}
+
+
+/* =========================
+   SECCIÓN INICIO
+========================= */
+
+.inicio {
+    background: linear-gradient(135deg, #dbeafe, #ffffff);
+    padding: 80px 20px;
+}
+
+.contenido-inicio {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contenido-inicio h2 {
+    font-size: 42px;
+    color: #202a44;
+    margin-bottom: 20px;
+}
+
+.contenido-inicio p {
+    max-width: 550px;
+    margin-bottom: 25px;
+}
+
+.contenido-inicio img {
+    width: 400px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.boton,
+button {
+    background-color: #6d0ea9;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton:hover,
+button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.seccion h2 {
+    text-align: center;
+    color: #202a44;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   SOBRE MÍ
+========================= */
+
+.tarjeta {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.tarjeta p {
+    margin-bottom: 15px;
+}
+
+.icono {
+    font-size: 40px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   PROYECTOS
+========================= */
+
+.contenedor-proyectos {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    background-color: white;
+    width: 280px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s;
+}
+
+.proyecto:hover {
+    transform: translateY(-8px);
+}
+
+.proyecto h3 {
+    color: #202a44;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.contacto {
+    max-width: 700px;
+}
+
+.contacto p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 7px;
+
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    background-color: #202a44;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.redes {
+    margin-top: 10px;
+}
+
+.redes a {
+    color: white;
+    font-size: 22px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: #6ec6ff;
+}
+
+
+/* =========================
+   DISEÑO RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenido-inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenido-inicio h2 {
+        font-size: 34px;
+    }
+
+    .contenido-inicio img {
+        width: 100%;
+        max-width: 400px;
+    }
+}

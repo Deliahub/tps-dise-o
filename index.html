@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+
+    <!-- Archivo CSS externo -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Íconos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <nav class="navbar">
+            <h1>Mi Página Personal</h1>
+
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- SECCIÓN INICIO -->
+        <section id="inicio" class="inicio">
+            <div class="contenido-inicio">
+                <div>
+                    <h2>Hola, soy Delia</h2>
+                    <p>
+                        Bienvenido/a a mi página web personal.
+                        Soy estudiante de Desarrollo de Software y me interesa
+                        aprender sobre programación y tecnología.
+                    </p>
+
+                    <a href="#sobre-mi" class="boton">
+                        Conoceme más
+                    </a>
+                </div>
+
+                <img src="imagenes/perfil.jpeg.jpeg"
+        
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN SOBRE MÍ -->
+        <section id="sobre-mi" class="seccion">
+            <h2>Sobre mí</h2>
+
+            <div class="tarjeta">
+                <i class="fa-solid fa-user icono"></i>
+
+                <p>
+                    Soy una persona interesada en la tecnología, el desarrollo
+                    de páginas web y la programación. Actualmente estoy
+                    aprendiendo diferentes herramientas relacionadas con el
+                    desarrollo de software.
+                </p>
+
+                <p>
+                    Mi objetivo es seguir adquiriendo conocimientos y
+                    desarrollar proyectos que me permitan crecer tanto
+                    personal como profesionalmente.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN PROYECTOS -->
+        <section id="proyectos" class="seccion proyectos">
+            <h2>Mis proyectos</h2>
+
+            <div class="contenedor-proyectos">
+
+                <article class="proyecto">
+                    <i class="fa-solid fa-code icono"></i>
+                    <h3>Página Web</h3>
+                    <p>
+                        Desarrollo de una página web utilizando HTML5 y CSS3.
+                    </p>
+                </article>
+
+                <article class="proyecto">
+                    <i class="fa-solid fa-database icono"></i>
+                    <h3>Base de Datos</h3>
+                    <p>
+                        Proyecto relacionado con el diseño y administración
+                        de bases de datos utilizando MySQL.
+                    </p>
+                </article>
+
+                <article class="proyecto">
+                    <i class="fa-solid fa-laptop-code icono"></i>
+                    <h3>Programación</h3>
+                    <p>
+                        Prácticas de programación y desarrollo de software.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="seccion contacto">
+            <h2>Contacto</h2>
+
+            <p>
+                Si querés comunicarte conmigo, completá el siguiente formulario:
+            </p>
+
+            <form action="#" method="post">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text"
+                       id="nombre"
+                       name="nombre"
+                       placeholder="Ingrese su nombre"
+                       required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Ingrese su correo"
+                       required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje"
+                          name="mensaje"
+                          rows="5"
+                          placeholder="Escriba su mensaje"
+                          required></textarea>
+
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Enviar mensaje
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>
+            © 2026 Delia Mancilla - Todos los derechos reservados.
+        </p>
+
+        <div class="redes">
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
